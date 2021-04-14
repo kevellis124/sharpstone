@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sharpstone/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/sharpstone/static/js/main.b165fd5a.chunk.js",
-    "main.js.map": "/sharpstone/static/js/main.b165fd5a.chunk.js.map",
+    "main.js": "/sharpstone/static/js/main.0231c091.chunk.js",
+    "main.js.map": "/sharpstone/static/js/main.0231c091.chunk.js.map",
     "runtime-main.js": "/sharpstone/static/js/runtime-main.1fb5ef60.js",
     "runtime-main.js.map": "/sharpstone/static/js/runtime-main.1fb5ef60.js.map",
     "static/js/2.fe236dab.chunk.js": "/sharpstone/static/js/2.fe236dab.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1fb5ef60.js",
     "static/js/2.fe236dab.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.b165fd5a.chunk.js"
+    "static/js/main.0231c091.chunk.js"
   ]
 }
