@@ -4,7 +4,7 @@ export default function VisualizationContainer(props) {
     const data = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
-          {
+            {
             label: 'My First dataset',
             fill: false,
             lineTension: 0.1,
@@ -24,11 +24,18 @@ export default function VisualizationContainer(props) {
             pointRadius: 1,
             pointHitRadius: 10,
             data: [65, 59, 80, 81, 56, 55, 0]
-          }
+            }
         ]
-      };
-
+        };
+    // Adjust this how you'd like. "em" is a unit of relativity. "100em" means 100% of the screen.
+    // You can also use "px" for hard-coded pixels, but different devices have different pixel-counts so using
+    // relative sizes is better.
+    const lineStyle = {
+        width: '80em'
+    }
     return (
-        <Line data={data}/>
+        <div style={lineStyle}>
+            <Line data={data}/>
+        </div>
     );
 }
