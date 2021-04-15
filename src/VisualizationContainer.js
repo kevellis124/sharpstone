@@ -1,11 +1,7 @@
-function VisualizationContainer(props) {
+import { Line } from 'react-chartjs-2';
 
+export default function VisualizationContainer(props) {
     return (
-        <div>
-            <h3>Visualization</h3>
-            
-        </div>
+        <Line />
     );
 }
-
-export default VisualizationContainer;
