@@ -1,16 +1,28 @@
 import SportButton from "./SportButton";
+import React from 'react';
 
-function SportsHeader() {
+class SportsHeader extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {selected: null};
+      }
 
-    return (
-        <div>
-            <h1>SharpStone</h1>
-            <SportButton text="NBA" />
-            <SportButton text="NFL" />
-            <SportButton text="MLB" />
-            <SportButton text="NHL" />
-        </div>
-    );
+    updateSelected = (selected) => {
+        this.setState({
+            selected: selected
+        })
+    }
+    render(){
+        return (
+            <div>
+                <h1>SharpStone</h1>
+                <SportButton text="NBA" isSelected={this.state.selected == "NBA"} onClick={this.updateSelected}/>
+                <SportButton text="NFL" isSelected={this.state.selected == "NFL"} onClick={this.updateSelected}/>
+                <SportButton text="MLB" isSelected={this.state.selected == "MLB"} onClick={this.updateSelected}/>
+                <SportButton text="NHL" isSelected={this.state.selected == "NHL"} onClick={this.updateSelected}/>
+            </div>
+        );
+    }
 }
 
 export default SportsHeader;
