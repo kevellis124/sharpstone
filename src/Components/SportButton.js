@@ -1,6 +1,8 @@
+import './SportButton.css'
+
 function SportButton(props) {
     return (
-        <button className="button">
+        <button className={['toggle-button', 'button--large'].join(' ')}>
             {props.text}
         </button>
     );

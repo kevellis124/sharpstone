@@ -1,6 +1,6 @@
 import SportButton from "./SportButton";
 
-function Header() {
+function SportsHeader() {
 
     return (
         <div>
@@ -8,8 +8,9 @@ function Header() {
             <SportButton text="NBA" />
             <SportButton text="NFL" />
             <SportButton text="MLB" />
+            <SportButton text="NHL" />
         </div>
     );
 }
 
-export default Header;
+export default SportsHeader;

@@ -1,4 +1,4 @@
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 export default function VisualizationContainer(props) {
     const data = {
@@ -35,7 +35,7 @@ export default function VisualizationContainer(props) {
     }
     return (
         <div style={lineStyle}>
-            <Line data={data}/>
+            <Bar data={data}/>
         </div>
     );
 }
