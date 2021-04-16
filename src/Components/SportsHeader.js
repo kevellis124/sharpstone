@@ -15,7 +15,6 @@ class SportsHeader extends React.Component {
     render(){
         return (
             <div>
-                <h1>SharpStone</h1>
                 <SportButton text="NBA" isSelected={this.state.selected == "NBA"} onClick={this.updateSelected}/>
                 <SportButton text="NFL" isSelected={this.state.selected == "NFL"} onClick={this.updateSelected}/>
                 <SportButton text="MLB" isSelected={this.state.selected == "MLB"} onClick={this.updateSelected}/>
