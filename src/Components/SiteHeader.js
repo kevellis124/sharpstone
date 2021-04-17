@@ -10,15 +10,17 @@ const SiteHeader = ({ user }) => {
     return (
         <header>
             <div className="wrapper">
-                <RockSvg width='100px'/>
-                <h1>SharpStone</h1>
+                <div>
+                    <RockSvg className='ico' width='32px'/>
+                    <h1>SharpStone</h1>
+                </div>
                 <div>
                     {user ? (
-                    <Button size="small" onClick={onLogout} label="Log out" />
+                    <Button size="small" onClick={() => {}} label="Log out" />
                     ) : (
                     <>
-                        <Button size="small" onClick={onLogin} label="Log in" />
-                        <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+                        <Button size="small" onClick={() => {}} label="Log in" />
+                        <Button primary size="small" onClick={() => {}} label="Sign up" />
                     </>
                     )}
                 </div>

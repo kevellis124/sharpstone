@@ -1,5 +1,6 @@
 import SportButton from "./SportButton";
 import React from 'react';
+import './sportheader.css';
 
 class SportsHeader extends React.Component {
     constructor(props) {
@@ -14,11 +15,11 @@ class SportsHeader extends React.Component {
     }
     render(){
         return (
-            <div>
-                <SportButton text="NBA" isSelected={this.state.selected == "NBA"} onClick={this.updateSelected}/>
-                <SportButton text="NFL" isSelected={this.state.selected == "NFL"} onClick={this.updateSelected}/>
-                <SportButton text="MLB" isSelected={this.state.selected == "MLB"} onClick={this.updateSelected}/>
-                <SportButton text="NHL" isSelected={this.state.selected == "NHL"} onClick={this.updateSelected}/>
+            <div className='sport-group'>
+                <SportButton text="NBA" isSelected={this.state.selected === "NBA"} onClick={this.updateSelected}/>
+                <SportButton text="NFL" isSelected={this.state.selected === "NFL"} onClick={this.updateSelected}/>
+                <SportButton text="MLB" isSelected={this.state.selected === "MLB"} onClick={this.updateSelected}/>
+                <SportButton text="NHL" isSelected={this.state.selected === "NHL"} onClick={this.updateSelected}/>
             </div>
         );
     }
