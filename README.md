@@ -1,4 +1,6 @@
-# Read this to get started
+[![Build Status](https://travis-ci.com/kevellis124/sharpstone.svg?branch=main)](https://travis-ci.com/kevellis124/sharpstone)
+
+Sharp Stone is a sports-betting tool that can show visualizations to help you make decisions at the bookies.
 
 ## Installation
 Make sure you have npm installed on your computer. 
