@@ -7,11 +7,10 @@ jobs:
   - stage: test
     script:
     - npm run build
-    - npm run lint
     - npm run test
-  - stage: deploy
-    if: branch = main
-    script: npm run deploy
+  # - stage: deploy
+  #   if: branch = main
+  #   script: npm run deploy
 notifications:
   email:
     on_failure: always
