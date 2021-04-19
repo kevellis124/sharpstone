@@ -12,3 +12,6 @@ jobs:
   - stage: deploy
     if: branch = main
     script: npm run deploy
+notifications:
+  email:
+    on_failure: always
